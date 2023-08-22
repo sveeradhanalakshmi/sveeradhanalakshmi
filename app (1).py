@@ -7,7 +7,7 @@ clf=pickle.load(pickle_in)
 def main():
     html_temp='''
     <div style="background-color:yellow;padding:13px">
-    <h1 style="color:black;text-align:center;">CORONARY HEART DETECTION PREDICTION</h1>
+    <h1 style="color:black;text-align:center;">BIG MART DATA OUTLET SALES</h1>
     </div>'''
 
     st.markdown(html_temp,unsafe_allow_html=True)
@@ -24,11 +24,7 @@ def main():
 
 def prediction(itwe,itfa,ity,sbp,ots):
   s=clf.predict([[itwe,itfa,ity,sbp,ots]])
-  if s==1:
-     p='GOOD'
-  else:
-     p='BAD'
-  return p
+
 
 if __name__=='__main__':
     main()
