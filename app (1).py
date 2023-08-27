@@ -6,7 +6,7 @@ clf=pickle.load(pickle_in)
 
 def main():
     html_temp='''
-    <div style="background-color:yellow;padding:13px">
+    <div style="background-color:pink;padding:13px">
     <h1 style="color:black;text-align:center;">BIG MART DATA OUTLET SALES</h1>
     </div>'''
 
