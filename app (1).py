@@ -24,6 +24,7 @@ def main():
 
 def prediction(itwe,itfa,ity,sbp,ots):
   s=clf.predict([[itwe,itfa,ity,sbp,ots]])
+return s
 
 
 if __name__=='__main__':
